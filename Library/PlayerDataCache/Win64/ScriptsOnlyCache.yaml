@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - FollowEnemy
     - Gun
     - HealthSystem
+    - Items
     - MainMenu
     - MoveCamera
     - PlayerMovement
@@ -28,6 +29,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -223,6 +232,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6026}
     - Class: 114
       Script: {instanceID: 7048}
+    - Class: 114
+      Script: {instanceID: 7812}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -618,7 +629,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 8055ff3cf3a50a8973aa0e1ed7aedb6c
+      Hash: 658d3bae586138d94268841c47137c0f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Gun
@@ -1098,7 +1109,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 33b4e9a715c4edf960a76aa008165d2b
+      Hash: 3826dffb4039b68c6359b6f5b12f6f32
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: HealthSystem
@@ -1468,10 +1479,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 408e6cedf0667586d4d66f44dbda3932
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Items
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/DeathScreen.unity
   - Assets/Scenes/Won.unity
-  playerPath: G:/Cool Awesome Game/random map generation.exe
+  playerPath: G:/Virus2/random map generation.exe

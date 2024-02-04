@@ -314,6 +314,7 @@
 "Assets/Scripts/Follow Enemy.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/HealthSystem.cs"
+"Assets/Scripts/Items.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"

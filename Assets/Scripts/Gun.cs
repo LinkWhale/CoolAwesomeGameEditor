@@ -6,7 +6,9 @@ public class Gun : MonoBehaviour
 {
     public Transform bulletSpawn;
     public GameObject bulletPrefab;
-    public float bulletSpeed;
+    public Animator animator;
+    public float bulletSpeed = 20;
+    public float gunCD = 0.5f;
     private float cooldown;
 
     void Update()
@@ -14,10 +16,11 @@ public class Gun : MonoBehaviour
         if(cooldown < 0)
         {
             if(Input.GetKeyDown(KeyCode.Mouse0))
-            {           
+            {        
                 var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
                 bullet.GetComponent<Rigidbody>().velocity = bulletSpawn.forward * bulletSpeed;
-                cooldown = 0.5f;
+                cooldown = gunCD;
+                animator.SetTrigger("Shoot");
             }  
         }
         else

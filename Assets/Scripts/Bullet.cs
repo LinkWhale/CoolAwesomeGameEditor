@@ -5,10 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float life;
-    
     void Awake()
     {
-        Invoke("Fall", 0.1f);
+        life = GameObject.FindGameObjectWithTag("items").GetComponent<Items>().life;
+        Invoke("Fall", life);
     }
 
     void OnCollisionEnter(Collision collision)

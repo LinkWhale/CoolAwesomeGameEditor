@@ -16,6 +16,11 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
+        Invoke("UI", 0.5f);
+    }
+
+    void UI()
+    {
         healthUI.text = $"Health: {currentPlayerHealth}/{maxPlayerHealth}";
     }
 
